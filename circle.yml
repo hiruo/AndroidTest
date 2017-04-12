@@ -1,0 +1,8 @@
+machine:
+  java:
+    version: openjdk8
+  environment:
+    ANDROID_HOME: /usr/local/android-sdk-linux
+dependencies:
+  pre:
+    - echo y | android update sdk --no-ui --all --filter "android-25,build-tools-25.0.2"
